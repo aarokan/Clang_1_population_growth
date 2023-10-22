@@ -1,6 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
+// Declare funcion
+int calculateYears(int, int);
+
 int main(void)
 {
     // Prompt the user for a starting population size
