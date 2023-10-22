@@ -10,10 +10,13 @@ int main(void)
     int endingSize = get_int("Enter ending population size: ");
 
     // Call calculate years function
+    int years = calculateYears(startingSize, endingSize);
+
+    printf("years = %i", years);
 }
 
 // Calculate number of years for the population to reach the size
-int CalculateYears(startSize, endSize)
+int calculateYears(startSize, endSize)
 {
     int years = 0;
     while (startSize < endSize)
