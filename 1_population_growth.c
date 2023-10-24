@@ -15,7 +15,7 @@ int main(void)
     // Call calculate years function
     int years = calculateYears(startingSize, endingSize);
 
-    printf("years = %i", years);
+    printf("years = %i\n", years);
 }
 
 // Calculate number of years for the population to reach the size
@@ -26,7 +26,8 @@ int calculateYears(startSize, endSize)
     {
         /* Say we have a population of n llamas. 
         Each year, n / 3 new llamas are born, and n / 4 llamas pass away.*/
-        startSize += (startSize / 3) - (startSize / 4);
+        startSize += (startSize / 3);
+        startSize -= (startSize / 4);
         printf("startSize = %i \n", startSize);
         years += 1;
     }
