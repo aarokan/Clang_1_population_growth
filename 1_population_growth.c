@@ -27,8 +27,9 @@ int calculateYears(startSize, endSize)
         /* Say we have a population of n llamas. 
         Each year, n / 3 new llamas are born, and n / 4 llamas pass away.*/
         startSize += (startSize / 3);
+        printf("startSize = %i\n", startSize);
         startSize -= (startSize / 4);
-        printf("startSize = %i \n", startSize);
+        printf("startSize = %i\n", startSize);
         years += 1;
     }
     return years;       
