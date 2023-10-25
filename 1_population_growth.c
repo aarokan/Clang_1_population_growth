@@ -3,14 +3,22 @@
 
 // Declare funcion
 int calculateYears(int, int);
+int startingSize;
+int endingSize;
 
 int main(void)
 {
+    do
+    {
     // Prompt the user for a starting population size
-    int startingSize = get_int("Enter starting population size: ");
-
+    startingSize = get_int("Enter starting population size: ");
+    } while (startingSize < 9);
+    
+    do
+    {
     // Prompt the user for a Ending population size
-    int endingSize = get_int("Enter ending population size: ");
+    endingSize = get_int("Enter ending population size: ");
+    } while (endingSize < startingSize);    
 
     // Call calculate years function
     int years = calculateYears(startingSize, endingSize);
